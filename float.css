@@ -1,0 +1,134 @@
+/* reset full */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font: 15px/30px arial, sans-serif;
+    background-image:url("img/bg1.jpg");
+}
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    height: 50px;
+    background-color:#110c26;
+    border-bottom:2px solid red;
+}
+
+.container {
+    width: 960px;
+    margin: 80px auto;
+    background-color:#fff;
+    position: relative;
+     /* overflow: auto;   *//*u/menyesuaikan isi pada container*/
+}
+.twit {
+    width:200px;
+    height:200px;
+    background-image:url("img/twit.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    text-indent: -9999px;
+    position: absolute;
+    top:-23px;
+    right:-28px;
+
+}
+.header {
+    padding:20px;
+    padding-bottom: 10px; /* tempel header */
+    /* background-color: #e3dede; */
+}
+.header .judul {
+    font-size: 40px;
+    font-weight: bold;
+}
+.header ul li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px
+}
+.header a {
+    text-decoration: none;
+    color: rgb(255, 0, 191);
+    padding: 3px;
+}
+.header a:hover {
+    background-color: black;
+    color: white;
+}
+.gambar {
+    height: 400px;
+    background-image: url(img/5.jpg);
+     background-size: cover; /* agar gambar nya pass */
+     background-position: 0 -85px;
+    /* background-position: 0 -218px;  */
+    /* n1 = u/mengatur horizontal n2 = u/mengatur vertikal*/
+    border-bottom: 2px solid blue;
+    border-top: 5px solid salmon; 
+
+}
+.main {
+    width: 600px;
+    padding: 20px;
+    box-sizing: border-box; /* agar lebarnya tetap 600px*/
+    float: left;
+}
+.main h2 {
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+}
+.main .penulis {
+    font-size: 11px;
+    margin-top: -5px;
+}
+.main .penulis a {
+    color: salmon;
+    text-decoration: none; 
+}
+.main p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.sidebar {
+    width: 300px;
+    float: right;
+    padding: 20px;
+}
+.sidebar h3 {
+    font-weight: bolder;
+    color: #333;
+}
+.sidebar img {
+    float: left;
+    /* width: 70px;
+    height: 70px; */
+    padding-right: 5px;
+}
+.sidebar p {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: justify;
+   
+}
+
+.footer {
+    background-color: #333;
+    padding:10px;
+}
+.footer .copy {
+    color: #eaeaea;
+    text-align: center;
+    font-size: 15px;
+}
+
+.kosong {
+     clear: both;  /* u/membersihkan float */
+}
